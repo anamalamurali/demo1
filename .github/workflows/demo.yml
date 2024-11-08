@@ -1,1 +1,9 @@
 name: "CICD demo"
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'demo1'
+    paths:
+      - 'ep1/**'
