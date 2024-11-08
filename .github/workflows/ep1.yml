@@ -1,3 +1,12 @@
 # This pipeline will manage CloudRun deployment via terraform
 
 name : 'CICD DEMO'
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'demo'
+    paths:
+      - 'ep1/**'
+
