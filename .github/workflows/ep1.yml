@@ -10,3 +10,17 @@ on:
     paths:
       - 'ep1/**'
 
+concurrency: ${{ github.repository }}
+
+jobs:
+  tf_wrokspace:
+    name: 'CICD GitHub actions demo'
+    runs-on: 'ubuntu-latest'
+
+    steps:
+
+      - name: GIT Checkout
+        id: 'git-checkout'
+        uses: 'actions/checkout@v4'
+
+ 
