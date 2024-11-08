@@ -16,4 +16,11 @@ jobs:
     steps:
       - name: 'GIT Checkout'
         id: 'git-checkout'
-        
+        uses: 'actions/checkout@v4'
+      - name: 'Terraform init'
+        id: 'tf-init'
+        env:
+          GOOGLE_CRDENTIALS: ${{secrets.API_KEY}}
+        run: |
+          cd ./ep1
+          terraform init
