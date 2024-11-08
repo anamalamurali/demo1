@@ -10,7 +10,7 @@ on:
     paths:
       - 'ep1/**'
 
-concurrency: ${{ github.repository }}
+#concurrency: ${{ github.repository }}
 
 jobs:
   tf_wrokspace:
