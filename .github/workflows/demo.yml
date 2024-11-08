@@ -12,3 +12,9 @@ jobs:
   tf_workspace:
     name: 'CICD actions demo'
     runs-on: 'ubuntu-latest'
+
+    steps:
+      - name: 'GIT Checkout'
+        id: 'git-checkout'
+        uses: 'actions/checkout@v4'
+        
