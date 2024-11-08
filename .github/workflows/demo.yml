@@ -14,4 +14,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Terraform init
+        id: 'tf-init'
+        env:
+          GOOGLE_CRDENTIALS: ${{secrets.API_KEY}}
+        run: |
+          cd ./ep1
+          terraform init
+          pwd
 
