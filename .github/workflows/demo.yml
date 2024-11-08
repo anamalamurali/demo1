@@ -7,3 +7,8 @@ on:
       - 'demo1'
     paths:
       - 'ep1/**'
+
+jobs:
+  tf_workspace:
+    name: 'CICD actions demo'
+    runs-on: 'ubuntu-latest'
